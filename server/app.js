@@ -7,6 +7,8 @@ const app = express()
 //   res.send('rbac')
 // })
 
+app.use(express.json())
+
 app.use('/api', router)
 
 app.listen(3001, () => {
